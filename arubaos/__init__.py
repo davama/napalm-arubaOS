@@ -15,4 +15,5 @@
 """napalm-iosxe package."""
 from napalm_iosxe.iosxe import IOSXEDriver
 
-__all__ = ('IOSXEDriver',)
+ArubaOSDriver
+__all__ = ('ArubaOSDriver',)
