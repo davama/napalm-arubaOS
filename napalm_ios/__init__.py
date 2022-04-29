@@ -13,7 +13,8 @@
 # the License.
 
 """napalm_ios package."""
-import pkg_resources
+
+#import pkg_resources
 #from napalm_ios.ios import IOSDriver
 from napalm_ios.aruba505 import ArubaOSDriver
 
