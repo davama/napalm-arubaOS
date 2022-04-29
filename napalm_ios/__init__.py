@@ -14,11 +14,12 @@
 
 """napalm_ios package."""
 import pkg_resources
-from napalm_ios.ios import IOSDriver
+#from napalm_ios.ios import IOSDriver
+from napalm_ios.aruba505 import ArubaOSDriver
 
-try:
-    __version__ = pkg_resources.get_distribution('napalm-ios').version
-except pkg_resources.DistributionNotFound:
-    __version__ = "Not installed"
+#try:
+#    __version__ = pkg_resources.get_distribution('napalm-ios').version
+#except pkg_resources.DistributionNotFound:
+#    __version__ = "Not installed"
 
-__all__ = ['IOSDriver']
+__all__ = ['ArubaOSDriver']
