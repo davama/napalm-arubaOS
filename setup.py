@@ -4,17 +4,17 @@ import uuid
 from setuptools import setup, find_packages
 from pip.req import parse_requirements
 
-__author__ = 'Kirk Byers <ktbyers@twb-tech.com>'
+__author__ = 'david.johnnes@gmail.com'
 
 install_reqs = parse_requirements('requirements.txt', session=uuid.uuid1())
 reqs = [str(ir.req) for ir in install_reqs]
 
 setup(
-    name="napalm-ios",
-    version="0.8.1",
+    name="napalm-arubaOS",
+    version="0.0.1",
     packages=find_packages(),
     author="Kirk Byers",
-    author_email="ktbyers@twb-tech.com",
+    author_email="david.johnnes@gmail.com,
     description="Network Automation and Programmability Abstraction Layer with Multivendor support",
     classifiers=[
         'Topic :: Utilities',
@@ -22,7 +22,7 @@ setup(
         'Operating System :: POSIX :: Linux',
         'Operating System :: MacOS',
     ],
-    url="https://github.com/napalm-automation/napalm-ios",
+    url="https://github.com/napalm-automation/napalm-arubaOS",
     include_package_data=True,
     zip_safe=False,
     install_requires=reqs,
