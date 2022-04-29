@@ -132,4 +132,5 @@ class ArubaOSDriver(NetworkDriver):
         except:
             print(f"Failed to run the get_config from ArubaOS Driver\n")
         else:
+            self.is_alive = True
             return configs
