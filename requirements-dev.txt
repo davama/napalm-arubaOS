@@ -3,6 +3,7 @@ coveralls
 pytest
 pytest-cov
 pytest-json
+paramiko
 pytest-pythonpath
 pylama
 flake8-import-order
