@@ -1,29 +1,26 @@
 """setup.py file."""
-import uuid
+import setuptools
 
-from setuptools import setup, find_packages
-from pip.req import parse_requirements
+# read the contents of your README file
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
-__author__ = 'david.johnnes@gmail.com'
-
-install_reqs = parse_requirements('requirements.txt', session=uuid.uuid1())
-reqs = [str(ir.req) for ir in install_reqs]
-
-setup(
-    name="napalm-arubaOS",
-    version="0.0.1",
-    packages=find_packages(),
-    author="Kirk Byers",
-    author_email="david.johnnes@gmail.com,
-    description="Network Automation and Programmability Abstraction Layer with Multivendor support",
-    classifiers=[
-        'Topic :: Utilities',
-        'Programming Language :: Python',
-        'Operating System :: POSIX :: Linux',
-        'Operating System :: MacOS',
-    ],
+setuptools.setup(
+    name = "napalm_aruba505",
+    version = "0.0.53",
+    author = "David Johnnes",
+    author_email = "david.johnnes@gmail.com",
+    description = ("Napaml Aruba driver for ArubaOs Wi-Fi devices '505' "),
+    license = "BSD",
+    keywords = "napalm drive",
     url="https://github.com/napalm-automation/napalm-arubaOS",
-    include_package_data=True,
-    zip_safe=False,
-    install_requires=reqs,
-)
+    packages=['napalm_aruba505'],
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    classifiers=[
+        "Topic :: Utilities",
+        "Programming Language :: Python :: 3",
+        "Operating System :: OS Independent",
+        "License :: OSI Approved :: BSD License",
+    ],
+)   
