@@ -1,12 +1,12 @@
 Metadata-Version: 2.1
 Name: napalm-aruba505
-Version: 0.0.54
+Version: 0.0.108
 Summary: Napaml Aruba driver for ArubaOs Wi-Fi devices '505' 
 Home-page: https://github.com/djohnnes/napalm-arubaOS
 Author: David Johnnes
 Author-email: david.johnnes@gmail.com
 License: BSD
-Keywords: napalm drive
+Keywords: napalm driver
 Classifier: Topic :: Utilities
 Classifier: Programming Language :: Python :: 3
 Classifier: Operating System :: OS Independent
@@ -45,13 +45,6 @@ License-File: LICENSE
 </ul> <br>
 
 
-<p>System Requirements:</p>
-<div>
-<ul> pip install  sshFRIEND</ul>
-    <ul> The sshFRIEND module is required in order to use the napalm_aruba505 driver</ul>
-</div>
-
-<br>
 
 <p>Upcoming functionalities</p>
 <div>
@@ -61,7 +54,7 @@ License-File: LICENSE
 </div>
 
 <br>
-<p>Useful info:</p> 
+<p>Other useful tools:</p> 
 <div>
     <li> <a href="https://pypi.org/project/sshFRIEND/"> sshFRIEND</a> </li>
 </div>

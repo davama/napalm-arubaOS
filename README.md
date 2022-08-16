@@ -29,13 +29,6 @@
 </ul> <br>
 
 
-<p>System Requirements:</p>
-<div>
-<ul> pip install  sshFRIEND</ul>
-    <ul> The sshFRIEND module is required in order to use the napalm_aruba505 driver</ul>
-</div>
-
-<br>
 
 <p>Upcoming functionalities</p>
 <div>
@@ -45,7 +38,7 @@
 </div>
 
 <br>
-<p>Useful info:</p> 
+<p>Other useful tools:</p> 
 <div>
     <li> <a href="https://pypi.org/project/sshFRIEND/"> sshFRIEND</a> </li>
 </div>

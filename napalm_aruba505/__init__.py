@@ -1,4 +1,5 @@
-"""load napalm_arubaoss.ArubaOS class."""
+"""load napalm_aruba505.ArubaOS class."""
 
-from napalm_aruba505.ArubaOS import ArubaOS505
-__all__ = ('ArubaOS505',)
+# from napalm_aruba505.ArubaOS import Aruba505Driver
+from napalm_aruba505.arubaf import ArubaFDriver
+__all__ = ('ArubaFDriver',)
