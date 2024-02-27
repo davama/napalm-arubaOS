@@ -50,7 +50,7 @@ class ArubaFDriver(NetworkDriver):
             'ssh_config_file': None,
             'allow_agent': False,
             'session_log': None,
-            "read_timeout_override": 90,
+            "read_timeout_override": 120,
             "auth_timeout": 5,
             "conn_timeout": 5
         }
