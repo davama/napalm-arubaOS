@@ -8,7 +8,7 @@ import json
 from napalm.base import constants as c
 from netmiko import ConnectHandler
 from napalm.base.base import NetworkDriver
-
+from napalm.base.netmiko_helpers import netmiko_args
 
 # Easier to store these as constants
 SECONDS = 1
@@ -35,33 +35,7 @@ class ArubaFDriver(NetworkDriver):
         self.transport = optional_args.get('transport', 'ssh')
 
         # Netmiko possible arguments
-        netmiko_argument_map = {
-            'port': None,
-            'secret': '',
-            'verbose': False,
-            'keepalive': 30,
-            'global_delay_factor': 1,
-            'use_keys': False,
-            'key_file': None,
-            'ssh_strict': False,
-            'system_host_keys': False,
-            'alt_host_keys': False,
-            'alt_key_file': '',
-            'ssh_config_file': None,
-            'allow_agent': False,
-            'session_log': None,
-            "read_timeout_override": 120,
-            "auth_timeout": 5,
-            "conn_timeout": 5
-        }
-
-        # Build dict of any optional Netmiko args
-        self.netmiko_optional_args = {}
-        for k, v in netmiko_argument_map.items():
-            try:
-                self.netmiko_optional_args[k] = optional_args[k]
-            except KeyError:
-                pass
+        self.netmiko_optional_args = netmiko_args(optional_args)
 
         default_port = {
             'ssh': 22,
